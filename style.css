@@ -1,0 +1,88 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom right, #f4f4f9, #e0e0e0); /* Gradiente suave */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px; /* Largura máxima para centralizar */
+    margin: 0 auto; /* Centraliza a div */
+}
+
+h1 {
+    color: #d85c95; /* Cor rosa suave */
+    font-size: 2.5em; /* Tamanho maior para destaque */
+    margin-bottom: 20px;
+}
+
+.color-picker, .appointment {
+    background-color: #ffffff; /* Fundo branco para as seções */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra mais intensa */
+    padding: 30px;
+    margin: 20px auto;
+    transition: transform 0.2s;
+}
+
+.color-picker:hover, .appointment:hover {
+    transform: translateY(-5px); /* Eleva as seções ao passar o mouse */
+}
+
+h2 {
+    color: #555; /* Cor do subtítulo */
+    margin-bottom: 15px;
+}
+
+.colors {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que as cores se ajustem em várias linhas */
+    gap: 10px; /* Espaçamento entre as cores */
+}
+
+.color {
+    width: 60px; /* Tamanho das cores */
+    height: 60px;
+    cursor: pointer;
+    border-radius: 50%; /* Bordas arredondadas */
+    transition: transform 0.2s, border 0.2s; /* Transições suaves */
+    border: 2px solid transparent; /* Borda inicial */
+}
+
+.color:hover {
+    transform: scale(1.1); /* Aumenta a cor ao passar o mouse */
+    border: 2px solid #d85c95; /* Borda rosa ao passar o mouse */
+}
+
+button {
+    background-color: #ff69b4; /* Cor vibrante do botão */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px; /* Padding maior */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #ff1493; /* Cor mais escura ao passar o mouse */
+    transform: scale(1.05); /* Aumenta o botão ao passar o mouse */
+}
+
+#selected-color, #confirmation {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #d85c95; 
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom right, #f4f4f9, #e0e0e0); /* Gradiente suave */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}

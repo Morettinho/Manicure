@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha Seu Esmalte</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Escolha Seu Esmalte</h1>
+
+    <div class="color-picker">
+        <h2>Cores Disponíveis:</h2>
+        <div class="colors">
+            <div class="color" style="background-color: #FF5733;" onclick="selectColor('#FF5733')"></div>
+            <div class="color" style="background-color: #FF8D33;" onclick="selectColor('#FF8D33')"></div>
+            <div class="color" style="background-color: #FFD433;" onclick="selectColor('#FFD433')"></div>
+            <div class="color" style="background-color: #A8D33C;" onclick="selectColor('#A8D33C')"></div>
+            <div class="color" style="background-color: #33FF57;" onclick="selectColor('#33FF57')"></div>
+            <div class="color" style="background-color: #33FF8D;" onclick="selectColor('#33FF8D')"></div>
+            <div class="color" style="background-color: #33FFD4;" onclick="selectColor('#33FFD4')"></div>
+            <div class="color" style="background-color: #33A8D3;" onclick="selectColor('#33A8D3')"></div>
+            <div class="color" style="background-color: #3357FF;" onclick="selectColor('#3357FF')"></div>
+            <div class="color" style="background-color: #8D33FF;" onclick="selectColor('#8D33FF')"></div>
+            <div class="color" style="background-color: #D433FF;" onclick="selectColor('#D433FF')"></div>
+            <div class="color" style="background-color: #FF33A8;" onclick="selectColor('#FF33A8')"></div>
+            <div class="color" style="background-color: #FF336E;" onclick="selectColor('#FF336E')"></div>
+            <div class="color" style="background-color: #FF6E33;" onclick="selectColor('#FF6E33')"></div>
+            <div class="color" style="background-color: #D4FF33;" onclick="selectColor('#D4FF33')"></div>
+            <div class="color" style="background-color: #A3D433;" onclick="selectColor('#A3D433')"></div>
+            <div class="color" style="background-color: #33D4FF;" onclick="selectColor('#33D4FF')"></div>
+            <div class="color" style="background-color: #FF33A3;" onclick="selectColor('#FF33A3')"></div>
+            <div class="color" style="background-color: #FFC733;" onclick="selectColor('#FFC733')"></div>
+            <div class="color" style="background-color: #D3FF33;" onclick="selectColor('#D3FF33')"></div>
+        </div>
+        <p id="selected-color">Cor selecionada: Nenhuma</p>
+    </div>
+
+    <div class="appointment">
+        <h2>Agendar Horário</h2>
+        <input type="datetime-local" id="appointment-time">
+        <button onclick="bookAppointment()">Agendar</button>
+        <p id="confirmation"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
